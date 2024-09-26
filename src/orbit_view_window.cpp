@@ -24,6 +24,13 @@ void orbit_view_window::draw_orbit(orbit_keplerian const& orbit, glm::vec3 cente
         );
     }
 
+    // the vertex input to the shader doesnt matter
+    // the geometry shader just has to be run once
+    // the shape of the orbit is entirely determined
+    // by uniforms
+
+    // so we just supply one vertex to the VBO and call glDrawElements with GL_POINTS
+
     float vertices[] = {
         0.0f, 0.0f, 0.0f
     };
