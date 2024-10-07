@@ -1,7 +1,7 @@
 #version 330 core
 
 layout (points) in;
-layout (line_strip, max_vertices = 256) out;
+layout (line_strip, max_vertices = 128) out;
 
 uniform mat4 projection;
 uniform mat4 view;
